@@ -34,14 +34,8 @@ export type APIItem = {
   hourlyHealth?: ("operational" | "degraded" | "down")[];
   reviews?: Review[];
   sparklineValues?: number[];
-  sla?: {
-    uptimeTargetPct: number;
-    p99LatencyMs?: number;
-    incidentResponseMinutes?: number;
-    maintenanceWindow?: string;
-    supportTier?: string;
-    creditThresholdPct?: number;
-  };
+  pricingOnRequest?: boolean;
+  baseUrl?: string;
 };
 
 
